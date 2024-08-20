@@ -1,8 +1,10 @@
+import agenda from './assets/agenda.svg'
+
 function CartWidget() {
     return (
       <div className="agenda">
-      
-      </div>
+        <img src={agenda} alt="agenda" />
+        0</div>
     )
   }
   export default CartWidget
