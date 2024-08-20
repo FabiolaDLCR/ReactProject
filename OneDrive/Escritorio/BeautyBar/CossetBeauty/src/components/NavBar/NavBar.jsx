@@ -1,3 +1,6 @@
+import CartWidget from "../CartWidget/CartWidget"
+
+
 function NavBar() {
     return (
       <nav>
@@ -7,6 +10,7 @@ function NavBar() {
             <button>Corporales</button>
             <button>Depilacion</button>
         </div>
+        <CartWidget />
       </nav>
     )
   }
