@@ -1,8 +1,11 @@
 import React from 'react';
 import { data } from '../data.js';
+import ItemCount from '../ItemCount/ItemCount.jsx';
 
 export const ItemListContainer = () => {
     return(
+        <div>
+            <h2>Todos nuestros productos</h2>
         <div className="container-items"> {
             data.map (product => (
                 <div className = "item" key={product.id}>
@@ -12,10 +15,11 @@ export const ItemListContainer = () => {
 				<div className="info-product">
 					<h2>{product.productName}</h2>
 					<p className="price">${product.price}</p>
-					<button className="btn-add-cart">Añadir al carrito</button>
+					<ItemCount />
 				</div>
 			</div>
             ))}
+        </div>
         </div>
     );
 };

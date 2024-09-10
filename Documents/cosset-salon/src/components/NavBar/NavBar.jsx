@@ -6,12 +6,12 @@ function NavBar() {
     return (
 
       <nav>
-        <h1>Cosset Beauty Bar</h1>
+        <h1>Cosset Beauty</h1>
         <div>
             <button>Quienes somos</button>
-            <button>Eventos</button>
-            <button>Nuestros</button>
-            <button>Contacto</button>
+            <button>Uñas</button>
+            <button>Skincare</button>
+            <button>Depilación</button>
         </div>
         <CartWidget />
       </nav>
