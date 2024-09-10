@@ -5,7 +5,7 @@ import ItemCount from '../ItemCount/ItemCount.jsx';
 export const ItemListContainer = () => {
     return(
         <div>
-            <h2>Todos nuestros productos</h2>
+            <h2 className='bienvenida'>Todos nuestros productos</h2>
         <div className="container-items"> {
             data.map (product => (
                 <div className = "item" key={product.id}>
@@ -15,7 +15,7 @@ export const ItemListContainer = () => {
 				<div className="info-product">
 					<h2>{product.productName}</h2>
 					<p className="price">${product.price}</p>
-					<ItemCount />
+					<ItemCount initial={0} stock={10}/>
 				</div>
 			</div>
             ))}
